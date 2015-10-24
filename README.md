@@ -62,7 +62,7 @@ Seti_UI // อันนี้เป็นธีมนะ
 ```
 sudo apt-get install nodejs
 ```
-*Check ว่าลง node ไว้หรือยัง
+* Check ว่าลง node ไว้หรือยัง
 ```
 node -v
 ```
@@ -72,7 +72,7 @@ node -v
 ```
 sudo apt-get install npm
 ```
-*Check ว่าลง npm ไว้หรือยัง
+* Check ว่าลง npm ไว้หรือยัง
 ```
 npm -v
 ```
