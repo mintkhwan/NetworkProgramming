@@ -33,11 +33,21 @@ import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa
 #####5. ลองเปิดโปรแกรม sublime เพื่อใช้งานใหม่ในการลง package เสริม
 
 ##ลง Package เสริม ใน sublime
-#####ไปที่ Package control
+#####1. ไป Package control
 ```
 ctrl + shift + P
 ```
-#####2. Text editor plugins(Sublime)
+#####2. พิมพ์
 ```
-Using Package Control, install "SublimeLinter" and "SublimeLinter-contrib-standard"
+Install Package
+```
+#####3. เลือก Package เสริมที่ต้องการลง (ที่ควรจะลง)
+```
+Emmet
+```
+```
+HTMLBeautify
+```
+```
+Standard Format
 ```
