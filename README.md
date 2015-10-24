@@ -77,7 +77,6 @@ node -v
 ```
 
 
-
 ##2. ติดตั้ง npm
 ```
 sudo apt-get install npm
