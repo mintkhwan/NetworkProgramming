@@ -57,7 +57,7 @@ Seti_UI // อันนี้เป็นธีมนะ
 
 * ต้นทางเอามาจากเว็บนี้นะจ้ะ >> https://packagecontrol.io
 
-#ติดตั้ง NodeJS & npm
+#ติดตั้ง NodeJS & npm & nodemon & http-server
 ##1. ติดตั้ง NodeJS
 ```
 sudo apt-get install nodejs
@@ -84,4 +84,14 @@ sudo apt-get install npm
 * Check ว่าลง npm ไว้หรือยัง
 ```
 npm -v
+```
+
+##3. ติดตั้ง nodemon
+```
+sudo npm install nodemon -g
+```
+
+##4. ติดตั้ง http-server
+```
+npm install http-server -g
 ```
