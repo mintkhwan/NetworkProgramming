@@ -4,7 +4,7 @@ sudo apt-get install google-chrome-stable
 ```
 
 
-#ติดตั้ง Sublime Version 2
+#ติดตั้ง Sublime2
 ```
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo apt-get update
@@ -51,3 +51,10 @@ HTMLBeautify
 ```
 Standard Format
 ```
+```
+Devastate // อันนี้เป็นธีมนะ
+```
+
+* ต้นทางเอามาจากเว็บนี้นะจ้ะ >> https://packagecontrol.io
+
+
