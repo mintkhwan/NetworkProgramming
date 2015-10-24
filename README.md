@@ -52,7 +52,7 @@ HTMLBeautify
 Standard Format
 ```
 ```
-Devastate // อันนี้เป็นธีมนะ
+Seti_UI // อันนี้เป็นธีมนะ
 ```
 
 * ต้นทางเอามาจากเว็บนี้นะจ้ะ >> https://packagecontrol.io
