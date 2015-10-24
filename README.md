@@ -95,3 +95,146 @@ sudo npm install nodemon -g
 ```
 npm install http-server -g
 ```
+
+
+#mongoDB
+(ต้นทางมาจากเฟ้นนะ ^___^)
+##1. พิมพ์
+```
+npm init
+npm install express --save
+```
+
+##2. สร้างไฟล์ชื่อ server.js ละพิมพ์โค้ด
+```
+var express = require('express')
+
+var app = express()
+
+app.get('/', function(req,res){
+    res.send("Hello")
+})
+
+app.listen(3000)
+console.log('run in 3000')
+```
+
+##3.ลองทดสอบโปรแกรมด้วยคำสั่ง
+```
+node server.js หรือ
+nodemon server.js
+```
+
+##4. ลง body-parser
+```
+npm install body-parser --save
+```
+
+##5. เปลี่ยนโค้ดทั้งหมดใน server.js เป็นดังนี้
+```
+var express = require('express')
+var bodyParser = require('body-parser')
+
+var app = express()
+
+app.use(bodyParser.urlencoded({extended : true}))
+app.use(bodyParser.json())
+
+app.get('/', function(req,res){
+    res.send("Hello")
+})
+
+app.listen(3000)
+console.log('run in 3000')
+```
+
+##6. ลง mongoose
+```
+npm install mongoose --save
+```
+
+##7. เรียกใช้ mongoose และใช้เพิ่มคำสั่งเชื่อมต่อ โดยเปลี่ยนโค้ดทั้งหมดใน server.js เป็นดังนี้
+```
+var express = require('express')
+var bodyParser = require('body-parser')
+var mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost/db')
+
+var app = express()
+
+app.use(bodyParser.urlencoded({extended : true}))
+app.use(bodyParser.json())
+
+app.get('/', function(req,res){
+    res.send("Hello")
+})
+
+app.listen(3000)
+console.log('run in 3000')
+```
+
+##8. สร้างโฟลเดอร์ขึ้นมาใหม่ ระดับเดียวกับไฟล์ server.js
+* routes
+* models
+
+##9. สร้างไฟล์ api.js  ในโฟลเดอร์ routes
+
+##10. สร้างไฟล์ grade.js  ในโฟลเดอร์ models
+
+##11. ลง node-restful
+```
+npm install node-restful --save
+```
+
+##12. เพิ่มโค้ดในไฟล์ grade.js 
+```
+var restful = require('node-restful')
+var mongoose = restful.mongoose
+
+var grade = new mongoose.Schema({
+
+    name : String,
+    grade : String
+
+})
+
+module.exports = restful.model('grade',grade)
+```
+
+##13. เพิ่มโค้ดในไฟล์ api.js
+```
+var express = require('express')
+var router = express.Router()
+
+var Grade = require('../models/grade')
+
+Grade.methods(['get','put','post','delete'])
+Grade.register(router, '/grade')
+
+module.exports = router
+```
+
+##14. ในไฟล์ server.js ให้เปลี่ยนโค้ดเป็น
+```
+var express = require('express')
+var bodyParser = require('body-parser')
+var mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost/db')
+
+var app = express()
+
+app.use(bodyParser.urlencoded({extended : true}))
+app.use(bodyParser.json())
+
+app.use('/api',require('./routes/api'))
+
+app.listen(3000)
+console.log('run in 3000')
+```
+
+##15. ดู api ของเราได้ที่
+```
+http://localhost:3000/api/grade
+```
