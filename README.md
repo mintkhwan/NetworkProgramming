@@ -30,7 +30,7 @@ import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa
 
 #####3. กด esc เพื่อปิดหน้าต่างอันนั้น
 #####4. ปิดโปรแกรม sublime
-#####5. ลองเปิดโปรแกรม sublime เพื่อใช้งานใหม่ในการลง package เสริมต่างๆ ()
+#####5. ลองเปิดโปรแกรม sublime เพื่อใช้งานใหม่ในการลง package เสริม
 
 ###ติดตั้ง Standard package
 #####1. Install Standard package
