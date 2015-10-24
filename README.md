@@ -32,7 +32,7 @@ import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa
 #####4. ปิดโปรแกรม sublime
 #####5. ลองเปิดโปรแกรม sublime เพื่อใช้งานใหม่ในการลง package เสริม
 
-##ลง Package เสริม ใน sublime
+##ลง Package เสริม ใน Sublime
 #####1. ไป Package control
 ```
 ctrl + shift + P
@@ -57,4 +57,8 @@ Seti_UI // อันนี้เป็นธีมนะ
 
 * ต้นทางเอามาจากเว็บนี้นะจ้ะ >> https://packagecontrol.io
 
-
+#ติดตั้ง NodeJS & npm
+##1. ติดตั้ง NodeJS
+```
+sudo apt-get install nodejs
+```
