@@ -98,7 +98,7 @@ npm install http-server -g
 
 
 #mongoDB
-(ต้นทางมาจากเฟ้นนะ ^___^)
+(ต้นทางมาจากเฟ้นนะ ^___^ >> https://github.com/fen555/mongoose)
 ##1. พิมพ์
 ```
 npm init
@@ -121,7 +121,8 @@ console.log('run in 3000')
 
 ##3.ลองทดสอบโปรแกรมด้วยคำสั่ง
 ```
-node server.js หรือ
+node server.js 
+หรือ
 nodemon server.js
 ```
 
