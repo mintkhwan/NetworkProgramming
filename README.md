@@ -63,9 +63,10 @@ Seti_UI // อันนี้เป็นธีมนะ
 sudo apt-get install nodejs
 ```
 
-* ถ้าเกิดเจอ error if error! The program 'node' can be found in the following packages:
--node
--nodejs-legacy Try: sudo apt-get install
+* ถ้าเกิดเจอ error 
+* if error! The program 'node' can be found in the following packages:
+** node
+** nodejs-legacy Try: sudo apt-get install
 ```
 sudo ln -s `which nodejs` /usr/local/bin/node
 ```
